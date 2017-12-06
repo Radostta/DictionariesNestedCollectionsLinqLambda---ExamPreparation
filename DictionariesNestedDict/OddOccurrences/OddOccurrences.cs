@@ -10,7 +10,7 @@ namespace OddOccurrences
     {
         static void Main(string[] args)
         {
-            var words = Console.ReadLine().Split();
+            var words = Console.ReadLine().Split(new[] { ' '}, StringSplitOptions.RemoveEmptyEntries);
             var oddOccurrences = new Dictionary<string, int>();
 
             for (int i = 0; i < words.Length; i++)
