@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Largest3Nums", "Largest3Num
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoldAndSum", "FoldAndSum\FoldAndSum.csproj", "{5BA1E2B0-2F74-41E7-8756-6374B6708F7B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnonymousCache", "AnonymousCache\AnonymousCache.csproj", "{B29E8FFF-7298-482F-A2DD-15701191AAAE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{5BA1E2B0-2F74-41E7-8756-6374B6708F7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5BA1E2B0-2F74-41E7-8756-6374B6708F7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5BA1E2B0-2F74-41E7-8756-6374B6708F7B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B29E8FFF-7298-482F-A2DD-15701191AAAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B29E8FFF-7298-482F-A2DD-15701191AAAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B29E8FFF-7298-482F-A2DD-15701191AAAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B29E8FFF-7298-482F-A2DD-15701191AAAE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
