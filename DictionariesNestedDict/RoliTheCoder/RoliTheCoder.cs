@@ -8,27 +8,25 @@ using System.Threading.Tasks;
 namespace RoliTheCoder
 {
     public class Event
-    {
+    {   
         public string Name { get; set; }
         public List<string> Participants { get; set; }
 
         public Event(string name, List<string> participants)
         {
-            this.Name = name;
-            this.Participants = participants;
+            Name = name;
+            Participants = participants;
         }
     }
 
     class RoliTheCoder
     {
         static void Main(string[] args)
-        {
-            //INCOMPLETE
+        {            
+            //NB: underline in \w for eventName???
+            Regex regex = new Regex(@"^(?<id>\d+)\s*#(?<eventName>\w+)\s*(?<participants>(?:@[A-Za-z0-9'-]+\s*)*)$");
 
-            //NB: underline in \w ???
-            Regex regex = new Regex(@"^(?<id>\d+)\s*#(?<eventName>\w+)\s+(?<participants>(@[A-Za-z\d'-]+\s*)*)$");
-
-            //key - if -> value: name + List<string>
+            //key: id -> value: name + List<string>
             var dictEvents = new Dictionary<int, Event>();
 
             while (true)
@@ -40,7 +38,6 @@ namespace RoliTheCoder
                 }
 
                 Match eventMatch = regex.Match(line);
-
                 if (eventMatch.Success == false)
                 {
                     continue;
@@ -54,23 +51,38 @@ namespace RoliTheCoder
                 {
                     dictEvents.Add(id, new Event(eventName, participants));
                 }
-                else if(dictEvents[id].Name == eventName)
+                else if (dictEvents[id].Name == eventName)
                 {
                     dictEvents[id].Participants.AddRange(participants);
-                    dictEvents[id].Participants = dictEvents[id].Participants.Distinct().ToList();
-                }
+                }                
+            }
 
-                foreach (var e in dictEvents.OrderByDescending(e => e.Value.Participants.Count).ThenBy(e => e.Value.Name))
+            foreach (var e in dictEvents)
+            {
+                e.Value.Participants = e.Value.Participants.Distinct().ToList();
+            }
+
+            var ordered = dictEvents.Select(a => a.Value).OrderByDescending(e => e.Participants.Count).ThenBy(e => e.Name);
+
+            foreach (var e in ordered)
+            {
+                Console.WriteLine($"{e.Name} - {e.Participants.Count}");
+
+                foreach (var p in e.Participants.OrderBy(p => p))
                 {
-                    Console.WriteLine($"{e.Value.Name} - {e.Value.Participants.Count}");
-                    foreach (var p in e.Value.Participants.OrderBy(p => p))
-                    {
-                        Console.WriteLine(p);
-                    }
+                    Console.WriteLine(p);
                 }
             }
 
+            //foreach (var e in dictEvents.OrderByDescending(e => e.Value.Participants.Count).ThenBy(e => e.Value.Name))
+            //{
+            //    Console.WriteLine($"{e.Value.Name} - {e.Value.Participants.Count}");
 
+            //    foreach (var p in e.Value.Participants.OrderBy(p => p))
+            //    {
+            //        Console.WriteLine(p);
+            //    }
+            //}
         }
     }
 }

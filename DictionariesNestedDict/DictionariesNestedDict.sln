@@ -31,6 +31,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoliTheCoder", "RoliTheCode
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PokemonEvolutionV3", "PokemonEvolutionV3\PokemonEvolutionV3.csproj", "{50581F2A-567F-44C9-A39D-0D3831977824}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CubicsMessages", "CubicMessages\CubicsMessages.csproj", "{4296D55E-499F-4A9D-AA39-D65E547801A3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinningTicket", "WinningTicket\WinningTicket.csproj", "{A63E63E3-7B3B-4E62-BFC0-68B4AEEA5EB4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Files", "Files\Files.csproj", "{FC125EDF-64B6-404C-9376-F90C71981333}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -93,6 +99,18 @@ Global
 		{50581F2A-567F-44C9-A39D-0D3831977824}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{50581F2A-567F-44C9-A39D-0D3831977824}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{50581F2A-567F-44C9-A39D-0D3831977824}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4296D55E-499F-4A9D-AA39-D65E547801A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4296D55E-499F-4A9D-AA39-D65E547801A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4296D55E-499F-4A9D-AA39-D65E547801A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4296D55E-499F-4A9D-AA39-D65E547801A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A63E63E3-7B3B-4E62-BFC0-68B4AEEA5EB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A63E63E3-7B3B-4E62-BFC0-68B4AEEA5EB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A63E63E3-7B3B-4E62-BFC0-68B4AEEA5EB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A63E63E3-7B3B-4E62-BFC0-68B4AEEA5EB4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC125EDF-64B6-404C-9376-F90C71981333}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC125EDF-64B6-404C-9376-F90C71981333}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC125EDF-64B6-404C-9376-F90C71981333}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC125EDF-64B6-404C-9376-F90C71981333}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
