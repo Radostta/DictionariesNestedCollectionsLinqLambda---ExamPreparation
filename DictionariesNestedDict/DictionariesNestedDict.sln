@@ -37,6 +37,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinningTicket", "WinningTic
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Files", "Files\Files.csproj", "{FC125EDF-64B6-404C-9376-F90C71981333}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RainAir", "..\..\..\..\Desktop\Programming Fundamentals Extended November 2017\ProgrFundamentalsExam10122017\RainAir\RainAir.csproj", "{0E5B8155-7857-4198-A395-A2A4E9B75253}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -111,6 +113,10 @@ Global
 		{FC125EDF-64B6-404C-9376-F90C71981333}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FC125EDF-64B6-404C-9376-F90C71981333}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FC125EDF-64B6-404C-9376-F90C71981333}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E5B8155-7857-4198-A395-A2A4E9B75253}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E5B8155-7857-4198-A395-A2A4E9B75253}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E5B8155-7857-4198-A395-A2A4E9B75253}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E5B8155-7857-4198-A395-A2A4E9B75253}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
